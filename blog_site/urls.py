@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('post-list/',post_list_view),
     path('portfolio/',portfolio_view),
-    path("single_post/<int:abc>", single_post_view),
+    path("single_post/<int:abc>", single_post_view, name = "one-post"),
 ]
